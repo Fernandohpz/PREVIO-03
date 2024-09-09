@@ -1,0 +1,17 @@
+---------------------------------------------
+OSHONSOFT Z80 ASSEMBLER LISTING
+Line   Addr Opcode      Label   Instruction
+---------------------------------------------
+0001   0000             ;Alumno: Fernando Hernández Pérez
+0002   0000             ;Programa para sumar los registros A+B
+0003   0000             ;Almacenar el resultado en la localidad 1040H
+0004   0000             
+0005   0000 3E 00                  LD A,00h
+0006   0002 06 01                  LD B,01h
+0007   0004 80          CICLO:     ADD A,B
+0008   0005 32 40 10               LD (1040h), A
+0009   0008 04          	   INC B
+0010   0009 C3 04 00    FIN:       JP CICLO
+0011   000C             
+0012   000C             END
+Number of errors = 0
